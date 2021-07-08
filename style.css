@@ -1,0 +1,46 @@
+<style>
+
+blank{
+  
+}
+h1 {
+  font-size: 60pt;
+  text-align: center;
+  border-bottom: 2px gray solid;
+  margin: 0;
+  padding: 10px;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+#body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+#article {
+  padding: 30px;
+  border-left: 2px gray solid;
+}
+#list {
+  padding-left: 10px;
+  font-size: 20pt;
+  width: 20%;
+  margin: 0;
+}
+
+@media(max-width:800px) {
+  #body {
+    display: block;
+  }
+  #article {
+    border-left: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
+</style>
