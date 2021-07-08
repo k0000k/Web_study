@@ -11,19 +11,45 @@ a {
 a:hover{
   text-decoration: underline;
 }
+h1 {
+  font-size: 60pt;
+  text-align: center;
+  border-bottom: 2px gray solid;
+  margin: 0;
+  padding: 10px;
+}
+#body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+#article {
+  padding: 30px;
+  border-left: 2px gray solid;
+}
+#list {
+  padding-left: 10px;
+  font-size: 20pt;
+  width: 100%;
+  margin: 0;
+}
 </style>
 </head>
+
 <body>
 <h1>파이리</h1>
 
+<div id="body">
+<div id="list">
 <ol>
  <li>사진</li>
  <li>특징</li>
  <li>TMI</li>
  <li>포켓몬 도감</li>
 </ol>
+</div>
 
-<img src="파이리.png" width="50%">
+<div id="article">
+<img src="파이리.png" width="40%">
 
 <h2>특징</h2>
 <p> 파이리는 <strong><u>불꽃타입</u> 포켓몬</strong>이다. 꼬리에 타오르는 불꽃은 파이리의 생명력을 상징한다.
@@ -38,5 +64,7 @@ a:hover{
 
 <h2>포켓몬 도감</h2>
 <a href="https://www.pokemonkorea.co.kr/pokedex/view/6" target="_blank" title="포켓몬 코리아">포켓몬 도감 No.4 파이리</a>
+</div>
+</div>
 </body>
 </html>
