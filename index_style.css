@@ -1,0 +1,30 @@
+<style>
+
+blank{
+
+}
+a {
+  color: darkgreen;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+h1 {
+  font-size: 60pt;
+  text-align: center;
+  border: 2px grey solid;
+  padding: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+p {
+  font-size: 25pt;
+  text-align: center;
+}
+li {
+  font-size: 17pt;
+  text-align: center;
+  padding: 5px;
+}
+</style>

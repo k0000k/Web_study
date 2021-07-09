@@ -1,14 +1,7 @@
 <style>
 
 blank{
-  
-}
-h1 {
-  font-size: 60pt;
-  text-align: center;
-  border-bottom: 2px gray solid;
-  margin: 0;
-  padding: 10px;
+
 }
 a {
   color: green;
@@ -16,6 +9,14 @@ a {
 }
 a:hover{
   text-decoration: underline;
+}
+h1 {
+  color: orange;
+  font-size: 60pt;
+  text-align: center;
+  border-bottom: 2px gray solid;
+  margin: 0;
+  padding: 10px;
 }
 #body {
   display: grid;
@@ -28,19 +29,7 @@ a:hover{
 #list {
   padding-left: 10px;
   font-size: 20pt;
-  width: 20%;
+  width: 100%;
   margin: 0;
-}
-
-@media(max-width:800px) {
-  #body {
-    display: block;
-  }
-  #article {
-    border-left: none;
-  }
-  h1 {
-    border-bottom: none;
-  }
 }
 </style>
