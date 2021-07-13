@@ -3,6 +3,9 @@
 blank{
 
 }
+#button_index{
+  text-align: center;
+}
 a {
   color: darkgreen;
   text-decoration: none;
