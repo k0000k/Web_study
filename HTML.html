@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>HTML - Web study</title>
 <link rel="stylesheet" href="page_style.css">
+
+<script src="color.js"></script>
 </head>
 
 <body>
@@ -18,16 +20,7 @@
 </ol>
 </div>
 <div id="article">
-
-  <input type="button" value="Night" onclick="
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="Day" onclick="
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';
-  ">
-  
+<input type="button" value="night" onclick="daynight(this);">
 <h2>HTML이란?</h2>
 <img src="html로고.png">
 
@@ -54,6 +47,7 @@ document.querySelector('body').style.color='black';
 <p>추후 내용 추가예정</p>
 <p style="margin-top:200px;">
 <p>공부하면서 처음 만든 페이지 버리기 아까워서 넣어봅니다. <a href="파이리.html" target="_blank">굳이 TMI가 보고싶다면 클릭.</a></p>
+<br><input type="button" value="night" onclick="daynight(this);"
 </div>
 </div>
 

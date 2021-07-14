@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Web study</title>
 <link rel="stylesheet" href="index_style.css">
+<script src="color.js"></script>
 </head>
 
 <body>
@@ -16,14 +17,7 @@
   <li><a href="Javascript.html">Javascript</a></li>
 <br>
 <div id="button_index">
-  <input type="button" value="Night" onclick="
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="Day" onclick="
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';
-  ">
+<input type="button" value="night" onclick="daynight(this);">
 </div>
 </body>
 </html>

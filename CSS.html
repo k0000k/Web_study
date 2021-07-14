@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>CSS - Web study</title>
 <link rel="stylesheet" href="page_style.css">
+<script src="color.js"></script>
 </head>
 
 <body>
@@ -20,15 +21,8 @@
 
 <div id="article">
 
-  <input type="button" value="Night" onclick="
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="Day" onclick="
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';
-  ">
-  
+<input type="button" value="night" onclick="daynight(this);">
+
 <h2>CSS란?</h2>
 <img src="css로고.png" width="10%">
 
