@@ -1,8 +1,6 @@
 
-var link=
-{
-   setcolor:function(color)
-   {
+var link={
+   setcolor:function(color){
       $('a').css('color', color);
     }
 }
