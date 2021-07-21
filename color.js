@@ -1,25 +1,22 @@
 
-var link={
-  setcolor:function(color){
-    var alist=document.querySelectorAll('a');
-    var i=0;
-    while (i<alist.length){
-      alist[i].style.color=color;
-      i=i+1;
+var link=
+{
+   setcolor:function(color)
+   {
+      $('a').css('color', color);
     }
-  }
 }
 
 var body= {
   setcolor:function(color){
-    document.querySelector('body').style.color=color;
+    $('body').css('color', color);
   },
   setbackgroundcolor:function(color){
-    document.querySelector('body').style.backgroundColor=color;
+    $('body').css('backgroundColor', color);
   }
 }
 
-  function daynight(self){
+function daynight(self){
   if (self.value==='night'){
     body.setbackgroundcolor('black');
     body.setcolor('white');
