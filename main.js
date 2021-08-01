@@ -98,6 +98,8 @@ app.use("/create_process",function(req,res,next) {
 
 app.use("/update",function(req,res,next) {
   fs.readdir('./description_data', function(err,filelist){
+    var _url = req.url;
+    var queryData=url.parse(_url,true).query;
     var filteredId = path.parse(queryData.id).base;
     fs.readFile(`description_data/${filteredId}.html`, 'utf8', function(err, description){
       var title=queryData.id;

@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "react-scripts": "^4.0.3",
     "sanitize-html": "^2.4.0"
   }
 }
