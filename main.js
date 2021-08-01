@@ -5,7 +5,7 @@ var qs = require('querystring');
 var path = require('path');
 var sanitizeHtml = require('sanitize-html');
 var template=require('./lib/template.js');
-/*
+
 var express = require('express');
 var _app = express();
 
@@ -15,13 +15,13 @@ _app.use('/css', express.static('./public/css'));
 _app.use('/image', express.static('./public/image'));
 _app.use('/js', express.static('./public/js'));
 
-이 부분은 express 모듈 이용해서 CSS와 Javascript 적용 시도한 부분이지만 보류!
-주석부분처럼 app.get으로 접속하면 CSS와 Javascript가 정상 작동하지만 create과 update에 접속시 cannot get/ 오류 발생
-현재 코드는 create과 update는 정상 작동하지만, CSS, Javascript 파일이 불러와지지 않음
-*/
+//이 부분은 express 모듈 이용해서 CSS와 Javascript 적용 시도한 부분이지만 보류!
+//주석부분처럼 app.get으로 접속하면 CSS와 Javascript가 정상 작동하지만 create과 update에 접속시 cannot get/ 오류 발생
+//현재 코드는 create과 update는 정상 작동하지만, CSS, Javascript 파일이 불러와지지 않음
+
 
 var app = http.createServer(function(request,response){
-//app.get('/', function(request,response){
+  app.get('/', function(request,response){
     var _url = request.url;
     var queryData=url.parse(_url,true).query;
     var title=queryData.id;
@@ -160,4 +160,4 @@ var app = http.createServer(function(request,response){
     response.end('Not found');
   }
 });
-app.listen(3000);
+app.listen(3000)});
