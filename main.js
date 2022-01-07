@@ -67,7 +67,7 @@ app.get('/', function(request,response){
       var title = 'create - Web study';
       var list = template.list(filelist);
       var html = template.HTML(title, list, `
-        <form action="http://localhost:3000/create_process" method="post">
+        <form action="https://k0000k.herokuapp.com/create_process" method="post">
           <p><input type="text" name="title" placeholder="title"></p>
           <p>
             <textarea name="description" placeholder="description"></textarea>
@@ -107,7 +107,7 @@ app.use("/update",function(req,res,next) {
       var list = template.list(filelist);
       var html=template.HTML(title, list,
         `
-        <form action="http://localhost:3000/update_process" method="post">
+        <form action="https://k0000k.herokuapp.com/update_process" method="post">
           <input type="hidden" name="id" value="${title}">
           <p><input type="text" name="title" placeholder="title" value="${title}"></p>
           <p>
