@@ -10,6 +10,7 @@ var express = require('express');
 var app = express();
 
 var server=http.createServer(app)
+const port=process.env.PORT;
 
 app.use('/css', express.static('./public/css'));
 app.use('/image', express.static('./public/image'));
@@ -166,4 +167,4 @@ app.use("/delete_process",function(req,res,next) {
   }
   */
 });
-app.listen(3000);
+app.listen(port);

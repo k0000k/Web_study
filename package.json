@@ -1,12 +1,13 @@
 {
   "name": "Web_study",
   "version": "1.0.0",
-  "description": "웹프로그래밍 공부",
+  "description": "",
   "main": "main.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
